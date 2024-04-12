@@ -1,0 +1,190 @@
+.headlines
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+.headlines select
+{
+    border: 1px solid #000000;
+    padding: 5px;
+    background:transparent;
+}
+.headlines p
+{
+    color: gray;
+    cursor: pointer;
+}
+.headlines p:hover
+{
+    color: #ff523b;
+}
+.headlines select:focus
+{
+    outline: none;
+}
+.page-button
+{
+    margin: 0 auto 80px;
+}
+.page-button span
+{
+    display: inline-block;
+    border: 1px solid red;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+cursor: pointer;
+margin-right: 10px;
+font-weight: 600 ;
+}
+.page-button span:hover
+{
+   background-color: #ff523b;
+   color: white;
+}
+/* --------------singleproduct---------- */
+.single-product
+{
+    margin-top: 80px;
+
+}
+
+.view
+{
+    flex-basis: 50%;
+    min-width: 300px;
+    margin-right: 20px;
+}
+.view img
+{
+    max-width: 100%;
+    padding: 0;
+
+}
+.view-txt
+{
+    /* flex-basis: 42%; */
+    /* margin-bottom: 20px; */
+    width: 500px;
+}
+.view-txt p
+{
+    color: rgb(105, 105, 105);
+    margin-bottom: 35px;
+ 
+}
+.view-txt h1
+{
+    font-size: 50px; 
+    margin-bottom: 40px;
+    
+}
+.view-txt h4
+{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.view-txt select
+{
+    display: block;
+    font-weight: bold;
+    outline: none;
+    background: transparent;
+    border: 1px solid #ff523b;
+    padding: 10px;
+    margin-top: 40px;
+
+}
+.view-txt input
+{
+    width: 50px;
+    height: 40px;
+    font-size: 18px;
+    margin-right: 40px;
+    padding-left: 10px;
+    border: 1px solid  #ff523b;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.view-txt input:focus
+{
+    outline: none;
+}
+.view-txt button
+{
+    outline: none;
+    border: none;
+    background-color: #ff523b;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+    width: 170px;
+    border-radius: 30px;
+    transition: background 0.3s;
+    text-decoration: none;
+
+}
+.view-txt button:hover
+{
+    background-color: white;
+    color: #ff523b;
+    border: 1px solid black;
+}
+.view-txt h3
+{
+    margin-top: 45px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.view-txt h3 .ri
+{
+    color: #ff523b;
+}
+.view-txt span
+{
+    color: rgb(105, 105, 105);
+    font-size: 17px;
+    line-height: 0px;
+    
+}
+.small-view {
+    display: flex;
+    justify-content: space-between;
+}
+.small-view-img{
+   
+     flex-basis:24%;
+     cursor: pointer;
+}
+
+
+@media only screen and (max-width:600px)
+{
+.page-button 
+{
+    text-align: center;
+}
+.single-product .main
+{
+    text-align:left;
+}
+.single-product .view 
+{
+    padding: 20px 0;
+    padding-left: 20px;
+    flex-basis: 80%;
+    min-width: 400px;
+
+}
+.view-txt h1
+{
+    font-size: 29px; 
+    line-height: 26px;
+    
+}
+
+}

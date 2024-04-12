@@ -1,0 +1,571 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar
+{ 
+    display: flex;
+    align-items: center;
+    padding: 15px 80px;
+    background-color: #ccc;
+    position: sticky;
+
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+.cart 
+{
+    margin-left: 10px;
+}
+
+.navbar nav ul
+{
+      display: inline-block;
+      list-style: none;
+      margin-top: 3px;
+      
+}
+nav ul li 
+{
+    display: inline-block;
+    margin-right: 20px;
+} 
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+}
+.main
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: auto;
+}
+.main-img
+{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.main-img img
+{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.main-txt
+{ padding-bottom: 30px;
+   
+}
+.main-txt h1
+{
+    font-size: 40px;
+    margin: 30px 0;
+    font-family: cursive;
+    
+}
+.main-txt p
+{
+    font-size: 15px;
+    width: auto;
+    margin: 30px 0;
+    font-family:sans-serif;
+    width: 600px;
+}
+.main-txt button
+{
+    outline: none;
+    border: none;
+    background-color: orange;
+    padding: 12px;
+    font-size: 14px;
+    width: 200px;
+    color: black;
+     border-radius: 30px;
+     transition: background 0.3s;
+}
+.main-txt button:hover
+{
+    border: 1.5px solid black;
+    background: white ;
+}
+.category
+{
+    margin: 70px 0;
+}
+.small-container
+{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.images
+{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.images img
+{
+    width: 100%;
+}
+
+
+.title
+{
+    text-align: center;
+    margin: 0 auto  80px;
+    position: relative;
+    line-height:4px;
+    margin-top: 20px;
+}
+.title hr
+{
+    border: none;
+    width: 10%;
+    height: 5px;
+    border-radius: 10px;
+   background-color:orange;
+   margin-top: 20px;
+   margin-left: 4px;
+   margin-left: 49%;
+    
+}
+.title .latest
+{
+    
+    border: none;
+    width: 10%;
+    height: 5px;
+    border-radius: 10px;
+   background-color:orange;
+   margin-left: 42.2%;
+    
+}
+
+.products
+{
+    flex-basis:23%;
+    padding: 10px;
+    min-width: 20px;
+    margin-bottom: 50px;
+}
+.products img
+{
+     width: 100%;
+}
+.products h4
+{
+       font-family: cursive;
+       margin-bottom: 10px;
+       margin-top: 10px;
+}
+.products .rating i
+{
+    font-size: 16px;
+ 
+    
+}
+.products .prices 
+{
+    
+    display: flex;
+
+}
+.products .prices p
+{
+    color: black;
+    margin-right: 10px;
+    margin-top: 7px;
+    font-size: 13px;
+}
+.products .prices p span
+{
+    color: #6d6c6c;
+    text-decoration: line-through;
+}
+.offer-flex
+{
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+.offer
+{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.offer-list img
+{ 
+    width: 350px;
+    padding: 20px;
+    
+    
+}
+.offer-txt
+{
+    margin-left: 60px;
+}
+.offer-txt p
+{
+   font-size: 16px;
+ 
+}
+.offer-txt span
+{
+    line-height: 25px;
+}
+.offer-txt h1
+{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.offer-txt button
+{
+    outline: none;
+    border: none;
+    background-color: rgb(255, 81, 0);
+    padding: 12px;
+    font-size: 14px;
+    width: 150px;
+    margin-top: 30px;
+    color: rgb(255, 250, 250);
+     border-radius: 30px;
+     transition: background 0.3s;
+}
+
+
+/* ------------customer------------- */
+.customer
+{
+    padding-top: 100px;
+}
+.box
+{
+    
+    flex-basis:24%;
+    padding: 40px 20px;
+    min-width: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+
+
+}
+.box .rating i
+{
+    color: red;
+   
+}
+.box img
+{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.box p
+{
+     margin: 14px 0;
+     color: #777;
+}
+.box:hover
+{
+    transform: translateY(-10px);
+}
+/* b----------------brands ----------*/
+.brands
+{
+    margin: 70px auto;
+}
+.brandsall img
+{
+    width: 160px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+    margin-inline: 20px;
+}
+.brandsall img:hover
+{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+/* ---------footer */
+.footer-all
+{
+    background-color: black;
+    color: white;
+    padding: 60px 0;
+}
+.footer-all hr
+{
+    color: #b1b1b1;
+    width: 65%;
+    margin-top: 40px;
+    
+}
+.footer
+{
+    font-size:14px;
+    display: flex;
+    align-items: center;
+
+}
+.footer p
+{
+    color: #b1b1b1;
+}
+.footer-1
+{
+    min-width: 250px;
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    margin-left: 120px;
+
+}
+.footer-1 h2
+{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.footer-1 p
+{
+    font-size: 14px;
+    margin-bottom: 25px;
+
+}
+.footer-1 .image img
+{
+    width:130px;
+    margin-right: 10px;
+}
+.footer-2
+{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.footer-2 img
+{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-2 p
+{
+    line-height: 24px;
+
+}
+
+.footer-3,.footer-4{
+    flex-basis: 12%;
+    text-align: center;
+    margin-left: 80px;
+}
+.footer-3 ul,.footer-4 ul 
+{
+    list-style: none  ;
+}
+.footer-3 ul ,.footer-4 ul
+{
+    margin-bottom: 20px;
+    color: #b1b1b1;
+
+
+}
+.footer-3 ul li , .footer-4 ul li
+{
+    margin-bottom: 4px;
+}
+.footer-3 h2 ,.footer-4 h2
+{
+    margin-bottom: 18px;
+}
+.copy-right p
+{
+    font-size: 10px;
+    text-align: center;
+    color: hsl(0, 0%, 69%);
+    margin-top: 30px;
+
+}
+.menu
+{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    display: none;
+}
+/* --------------------cart----page */
+.cart-page
+{
+    margin: 80px auto;
+}
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+.info
+{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+table th
+{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background-color: #ff523b;
+    font-weight: normal;
+}
+table td
+{
+    padding: 10px 0;
+}
+table input
+{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+table a
+{
+    text-decoration: none;
+    color: #ff523b;
+}
+table img
+{
+    width: 85px;
+    height: 85px;
+    margin-right: 10px;
+}
+.total-prices
+{
+     display: flex;
+     justify-content: flex-end;
+}
+.total-prices table
+{
+   border-top: 3px solid #ff523b;
+   width: 100%;
+   max-width: 400px;
+}
+td:last-child
+{
+    text-align: right;
+
+}
+th:last-child
+{
+    text-align: right;
+    
+}
+/* --------------------------media query----------- */
+@media only screen and (max-width:800px) 
+{
+     nav ul
+    {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        height: auto;
+      
+    }
+    nav ul li 
+    {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    nav ul li:hover
+    {
+        transform: scale(1.1);
+    }
+    nav ul li a
+    {
+        color: white;
+    }
+    .cart
+    {
+        position: absolute;
+        right: 100px;
+    }
+    .menu
+    {
+        display: block;
+        cursor: pointer;
+       position: absolute;
+       right: 50px;
+    }
+
+}
+@media only screen and (max-width:600px)
+{
+    .main
+    {
+        text-align: center;
+
+    }
+   .products,.images,.box
+   {
+    flex-basis: 100%;
+   }
+    .offer-flex,.footer
+   {
+    display: block;
+   }
+   .main-txt h1
+   {
+    margin-top: 66px;
+    font-size: 60px;
+    width: 300px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+   }
+  .main-txt p
+   {
+      font-size: 14px;
+       width: 400px;
+      margin-top: 0px;
+      color: #333;
+      
+   } 
+.offer-txt
+{
+    margin-top: 70px;
+    
+}
+.prices 
+{
+    margin-left: 38%;
+    margin-top: 10px;
+}
+.info
+{
+    display: block;
+}
+.info div
+{
+    font-size:15px;
+    margin-left:7px;
+}
+.info p 
+{
+    display: none;
+}
+} 
